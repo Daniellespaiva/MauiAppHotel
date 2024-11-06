@@ -56,9 +56,9 @@
         </Frame>
 
         <HorizontalStackLayout HorizontalOptions="Center">
-            <Button  Text="Avançar"
+            <Button  Text="Voltar"
                       Clicked="Button_Clicked"  />
-            <Button Text="Voltar" 
+            <Button Text="Avançar" 
                     Clicked="Button_Clicked_1" />
 
         </HorizontalStackLayout>    
