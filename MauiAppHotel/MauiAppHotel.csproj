@@ -57,9 +57,55 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Resources\Images\paisagem.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\paisagem.xaml" />
+	  <MauiImage Remove="Resources\Images\paisagem.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="Resources\Images\paisagem.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Fonts\Kalam-Bold.ttf" />
+	  <None Remove="Resources\Fonts\Kalam-Light.ttf" />
+	  <None Remove="Resources\Fonts\Kalam-Regular.ttf" />
+	  <None Remove="Resources\Fonts\PTSerif-Bold.ttf" />
+	  <None Remove="Resources\Fonts\PTSerif-BoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\PTSerif-Italic.ttf" />
+	  <None Remove="Resources\Fonts\PTSerif-Regular.ttf" />
+	  <None Remove="Resources\Images\calendario.png" />
+	  <None Remove="Resources\Images\devee.png" />
+	  <None Remove="Resources\Images\hotel_img.png" />
+	  <None Remove="Resources\Images\imagem.jpeg" />
+	  <None Remove="Resources\Images\img.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\hospedagemContratada.xaml.cs">
+	    <DependentUpon>HospedagemContratada.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\ContratacaoHospedagem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\HospedagemContratada.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Sobre.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
