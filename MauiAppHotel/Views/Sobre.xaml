@@ -19,9 +19,9 @@
             FontFamily="PTSerif-Bold"
             FontSize="25"
             TextColor="White"            
-            BackgroundColor="{StaticResource MidnightBlue}" Margin="5"/>
+            BackgroundColor="{StaticResource MidnightBlue}" Margin="10"/>
 
-        <Frame BackgroundColor="FloralWhite"  Margin="5">
+        <Frame BackgroundColor="FloralWhite"  Margin="10" Padding="10">
             <VerticalStackLayout >
                 <Grid RowDefinitions="Auto,Auto,Auto,Auto, Auto"                      
                       ColumnDefinitions="* ">
@@ -39,7 +39,7 @@
                     </HorizontalStackLayout>    
 
                     <Label Grid.Row="2" Grid.Column="0"
-                           Padding="2"/>
+                           Padding="0"/>
 
 
                     <Label Grid.Row="3" Grid.Column="0"
@@ -61,7 +61,7 @@
 
         </Frame>
 
-        <Frame BackgroundColor="FloralWhite" Margin="5">
+        <Frame BackgroundColor="FloralWhite" Margin="10">
             <VerticalStackLayout>
                 <Grid RowDefinitions="Auto">
 

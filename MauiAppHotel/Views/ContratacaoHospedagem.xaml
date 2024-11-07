@@ -10,10 +10,11 @@
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10"> 
         <Label 
-            Text="Cálculo da Diária"
+            Text="Calculo da Diária"
             FontFamily="PTSerif-Bold"
             FontSize="28"
-            TextColor="Navy"/>
+            TextColor="White"
+            BackgroundColor="{StaticResource MidnightBlue}" Margin ="10 "/>
 
         <Frame BackgroundColor="Transparent" BorderColor="Transparent" Margin="10">
             <VerticalStackLayout>
@@ -61,10 +62,12 @@
 
                 <Picker x:Name="pck_quarto"
                         Title="Selecione sua Acomodação"
-                        TextColor="Black"/>
+                        TextColor="Black"
+                        ItemDisplayBinding="{Binding Descricao}"/>
+                        
 
 
-                <Frame BackgroundColor="Transparent" BorderColor="Transparent" Margin="10" Padding="10">
+                <Frame BackgroundColor="Transparent" BorderColor="Black" Margin="10" Padding="10">
                      <VerticalStackLayout>
                         <Label Text="Período da Estadia"
                                TextColor="Navy"/>
@@ -72,6 +75,7 @@
                             <Label Text="Check-in:"
                                    TextColor="Black"/>
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         TextColor="Black"
                                         Format="dd/MM/yyyy" 
                                         />
@@ -90,7 +94,7 @@
                 <Button Text="Avançar" 
                         Clicked="Button_Clicked"
                         HorizontalOptions="Center"                        
-                        BackgroundColor="Navy" />
+                        BackgroundColor="{StaticResource MidnightBlue}" />
 
 
 
