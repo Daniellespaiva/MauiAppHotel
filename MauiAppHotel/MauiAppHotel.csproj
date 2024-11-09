@@ -61,6 +61,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\imagem_hotel.png" />
+	  <MauiImage Remove="Resources\Images\img.jpg" />
 	  <MauiImage Remove="Resources\Images\paisagem.xaml" />
 	  <MauiImage Remove="Resources\Images\paisagem.xaml.cs" />
 	</ItemGroup>
@@ -73,6 +75,12 @@
 	  <None Remove="Resources\Fonts\Kalam-Bold.ttf" />
 	  <None Remove="Resources\Fonts\Kalam-Light.ttf" />
 	  <None Remove="Resources\Fonts\Kalam-Regular.ttf" />
+	  <None Remove="Resources\Fonts\PlayfairDisplaySC-Black.ttf" />
+	  <None Remove="Resources\Fonts\PlayfairDisplaySC-BlackItalic.ttf" />
+	  <None Remove="Resources\Fonts\PlayfairDisplaySC-Bold.ttf" />
+	  <None Remove="Resources\Fonts\PlayfairDisplaySC-BoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\PlayfairDisplaySC-Italic.ttf" />
+	  <None Remove="Resources\Fonts\PlayfairDisplaySC-Regular.ttf" />
 	  <None Remove="Resources\Fonts\PTSerif-Bold.ttf" />
 	  <None Remove="Resources\Fonts\PTSerif-BoldItalic.ttf" />
 	  <None Remove="Resources\Fonts\PTSerif-Italic.ttf" />
@@ -81,7 +89,10 @@
 	  <None Remove="Resources\Images\devee.png" />
 	  <None Remove="Resources\Images\hotel_img.png" />
 	  <None Remove="Resources\Images\imagem.jpeg" />
+	  <None Remove="Resources\Images\imagem_hotel.png" />
 	  <None Remove="Resources\Images\img.jpg" />
+	  <None Remove="Resources\Images\img_1.jpg" />
+	  <None Remove="Resources\Images\logo.jpeg" />
 	</ItemGroup>
 
 	<ItemGroup>

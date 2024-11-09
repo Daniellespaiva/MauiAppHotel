@@ -4,17 +4,27 @@
              x:Class="MauiAppHotel.Views.hospedagemContratada"
              Title="hospedagemContratada"
               NavigationPage.HasNavigationBar="False"
-             BackgroundImageSource="img.jpg">
+             BackgroundImageSource="img_1.jpg">
 
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
-        <Label Text="Suite Super Luxo"
-                TextColor="White"
-               FontFamily="PTSerif-Regular"
-               FontSize="35"
-               BackgroundColor="{StaticResource MidnightBlue}" Margin="10"
-               HorizontalTextAlignment="Center"/>
+        <!-- Imagem no topo do layout-->
+        <Image Source="hotel_img.png" WidthRequest="500" HeightRequest="100"/>
+
+        <Frame BackgroundColor="LightGray"
+       CornerRadius="20"
+       Padding="10"
+       Margin="10">
+            <Label 
+        Text="Suite Super Luxo"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"
+        FontFamily="PlayfairDisplaySC-Regular"
+        FontSize="30"
+        TextColor="Navy"/>
+        </Frame>
+
         
         
         <Frame Margin="10" BackgroundColor="Transparent"  BorderColor="Black">
@@ -58,11 +68,16 @@
 
         <HorizontalStackLayout HorizontalOptions="Center">
             <Button  Text="Voltar"
+                     TextColor="Navy"
                       Clicked="Button_Clicked" 
-                     BackgroundColor="{StaticResource MidnightBlue}"/>
-            <Button Text="Avançar" 
+                     BackgroundColor="LightGray"
+                     Margin="0,0,10,0"/>
+            
+            <Button Text="Avançar"
+                    TextColor="Navy"
                     Clicked="Button_Clicked_1" 
-                    BackgroundColor="{StaticResource MidnightBlue}"/>
+                    BackgroundColor="LightGray"
+                    Margin="10,0,0,0"/>
 
         </HorizontalStackLayout>    
 

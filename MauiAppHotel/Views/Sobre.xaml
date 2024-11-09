@@ -4,22 +4,29 @@
              x:Class="MauiAppHotel.Views.Sobre"
              Title="Sobre"
              NavigationPage.HasNavigationBar="False"
-             BackgroundImageSource="img.jpg">
+             BackgroundImageSource="img_1.jpg">
     
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10"
                          Margin="10">
 
     <!-- Imagem no topo do layout-->
-        <Image Source="hotel_img.png" WidthRequest="100" HeightRequest="100"/>
+        <Image Source="hotel_img.png" WidthRequest="500" HeightRequest="100"/>
 
-        <Label
-            Text="Sobre o Aplicativo"
-            Padding="5"
-            FontFamily="PTSerif-Bold"
-            FontSize="25"
-            TextColor="White"            
-            BackgroundColor="{StaticResource MidnightBlue}" Margin="10"/>
+        <Frame BackgroundColor="LightGray"
+       CornerRadius="20"
+       Padding="10"
+       Margin="10">
+            
+            <Label 
+        Text="Sobre o Aplicativo"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"
+        FontFamily="PlayfairDisplaySC-Regular"
+        FontSize="25"
+        TextColor="Navy"/>
+        </Frame>
+
 
         <Frame BackgroundColor="FloralWhite"  Margin="10" Padding="10">
             <VerticalStackLayout >
@@ -34,7 +41,7 @@
                     <HorizontalStackLayout Grid.Row="1" Grid.Column="0">
                         <Image Source="devee.png" WidthRequest="20" HeightRequest="20"/>
                         <Label Text="Danielle Souto de Paiva"
-                              TextColor="Gray"
+                              TextColor="Black"
                                FontSize="12"/>
                     </HorizontalStackLayout>    
 
@@ -48,7 +55,7 @@
                     <HorizontalStackLayout Grid.Row="4" Grid.Column="0">
                         <Image Source="calendario.png" WidthRequest="20" HeightRequest="20"/>
                           <Label Text="2024"
-                           TextColor="gray"
+                           TextColor="Black"
                            FontSize="12"/>
                     </HorizontalStackLayout>    
 
@@ -67,7 +74,7 @@
 
                     <Label Grid.Row="0"
                            Text="Aplicativo desenvolvido  com uma interface amigável, funcionalidades robustas e um design intuitivo, ele facilita desde a descoberta até a reserva e o check-in no seu hotel. Garanta uma experiência de hospedagem personalizada e descomplicada, permitindo mais tempo para relaxar e explorar seu destino. Estamos empenhados em proporcionar o melhor em tecnologia e hospitalidade para que sua próxima estadia seja inesquecível."
-                           TextColor="gray"
+                           TextColor="Gray"
                            FontSize="12"/>
 
                 </Grid>
@@ -75,8 +82,9 @@
         </Frame>
 
         <Button Text="Voltar"
+                TextColor="Navy"
                 Clicked="Button_Clicked"               
-                BackgroundColor="{StaticResource MidnightBlue}"
+                BackgroundColor="LightGray"
                 HorizontalOptions="Center" />
 
     </VerticalStackLayout>

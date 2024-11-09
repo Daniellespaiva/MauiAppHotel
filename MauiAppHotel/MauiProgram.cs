@@ -20,6 +20,12 @@ namespace MauiAppHotel
                     fonts.AddFont("PTSerif-BoldItalic.ttf", "PTSerifBoldItalic");
                     fonts.AddFont("PTSerif-Italic..ttf", "PTSerifItalic.");
                     fonts.AddFont("PTSerif-Regular.ttf", "PTSerifRegular");
+                    fonts.AddFont("PlayfairDisplaySC-Black.ttf", "PlayfairDisplaySCBlack");
+                    fonts.AddFont("PlayfairDisplaySC-BlackItalic.ttf", "PlayfairDisplaySCBlackItalic");
+                    fonts.AddFont("PlayfairDisplaySC-Bold.ttf", "PlayfairDisplaySCBold");
+                    fonts.AddFont("PlayfairDisplaySC-BoldItalic.ttf", "PlayfairDisplaySCBoldItalic");
+                    fonts.AddFont("PlayfairDisplaySC-Italic.ttf", "PlayfairDisplaySCItalic");
+                    fonts.AddFont("PlayfairDisplaySC-Regular.ttf", "PlayfairDisplaySCRegular");
 
                 });
 
