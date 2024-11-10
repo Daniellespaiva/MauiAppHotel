@@ -63,6 +63,7 @@
 	<ItemGroup>
 	  <MauiImage Remove="Resources\Images\imagem_hotel.png" />
 	  <MauiImage Remove="Resources\Images\img.jpg" />
+	  <MauiImage Remove="Resources\Images\logo.jpeg" />
 	  <MauiImage Remove="Resources\Images\paisagem.xaml" />
 	  <MauiImage Remove="Resources\Images\paisagem.xaml.cs" />
 	</ItemGroup>
@@ -92,6 +93,7 @@
 	  <None Remove="Resources\Images\imagem_hotel.png" />
 	  <None Remove="Resources\Images\img.jpg" />
 	  <None Remove="Resources\Images\img_1.jpg" />
+	  <None Remove="Resources\Images\img_sobre.jpg" />
 	  <None Remove="Resources\Images\logo.jpeg" />
 	</ItemGroup>
 

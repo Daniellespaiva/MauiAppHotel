@@ -12,38 +12,39 @@
         <!-- Imagem no topo do layout-->
         <Image Source="hotel_img.png" WidthRequest="500" HeightRequest="100"/>
 
-        <Frame BackgroundColor="LightGray"
-       CornerRadius="20"
-       Padding="10"
-       Margin="10">
-            <Label 
-        Text="Suite Super Luxo"
-       HorizontalOptions="Center"
-       VerticalOptions="Center"
-        FontFamily="PlayfairDisplaySC-Regular"
-        FontSize="30"
-        TextColor="Navy"/>
+        <Frame BackgroundColor="Navy"
+                 CornerRadius="20"
+                 Padding="10"
+                 Margin="10">
+            
+            
+            <Label Text= "{Binding QuartoSelecionado.Descricao}"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontFamily="PlayfairDisplaySC-Regular"
+                   FontSize="30"
+                   TextColor="White"/>
         </Frame>
 
         
         
         <Frame Margin="10" BackgroundColor="Transparent"  BorderColor="Black">
-            <HorizontalStackLayout>
-                <HorizontalStackLayout Margin="0,0,50,0"> <!-- Espaço à direita -->
+            <StackLayout Orientation="Horizontal">
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                     <Label Text="Adultos:" />
-                    <Label Text=" 2"
-                           TextColor="Black" />
+                    <Label Text="{Binding QntAdultos}"
+                           TextColor="Navy" />
                     
                 </HorizontalStackLayout>
 
-                <HorizontalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                     <Label Text="Crianças: "/>
-                    <Label Text=" 1"
-                           TextColor="Black" />
+                    <Label Text="{Binding QntCriancas}"
+                           TextColor="Navy" />
                     
                 </HorizontalStackLayout>     
       
-            </HorizontalStackLayout>
+            </StackLayout>
         </Frame>
 
         <Frame BackgroundColor="Transparent" BorderColor="Black" Margin="10">
@@ -53,34 +54,48 @@
                 <Label Grid.Row="0" Grid.Column="1" Text="Check-out" />
                 <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" />
 
-                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024" />
-                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024" />
-                <Label Grid.Row="1" Grid.Column="2" Text="3" />
+                <Label Grid.Row="1" Grid.Column="0"
+                       TextColor="Navy"
+                       Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}'}" />
+                
+                <Label Grid.Row="1" Grid.Column="1"
+                       TextColor="Navy"
+                       Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy}'}" />
+                
+                <Label Grid.Row="1" Grid.Column="2"
+                       TextColor="Navy"
+                       Text="{Binding Estadia}" />
             </Grid>
         </Frame>
 
-        <Frame BackgroundColor="Transparent" BorderColor="Black" Margin="10">
-            <HorizontalStackLayout>
+        <Frame BackgroundColor="Transparent" BorderColor="Black"  Margin="10">
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                 <Label Text="Valor Total:" />
-                <Label Text=" R$ 750,00" />
+                <Label Text="{Binding ValorTotal,  StringFormat='{}{0:c}'}"
+                       TextColor="Navy"/>
             </HorizontalStackLayout>
         </Frame>
-
-        <HorizontalStackLayout HorizontalOptions="Center">
-            <Button  Text="Voltar"
-                     TextColor="Navy"
-                      Clicked="Button_Clicked" 
-                     BackgroundColor="LightGray"
-                     Margin="0,0,10,0"/>
+        
+        <VerticalStackLayout HorizontalOptions="FillAndExpand"
+                             VerticalOptions="FillAndExpand">
             
+            <Button Text="Voltar"
+                    TextColor="White"
+                    Clicked="Button_Clicked"
+                    BackgroundColor="Navy"
+                    HorizontalOptions="FillAndExpand"
+                    Padding="0"
+                    Margin="10"/>
+
             <Button Text="Avançar"
-                    TextColor="Navy"
-                    Clicked="Button_Clicked_1" 
-                    BackgroundColor="LightGray"
-                    Margin="10,0,0,0"/>
-
-        </HorizontalStackLayout>    
-
+                    TextColor="White"
+                    Clicked="Button_Clicked_1"
+                    BackgroundColor="Navy"
+                    HorizontalOptions="FillAndExpand"
+                    Padding="0"
+                    Margin="10"/>
+            
+        </VerticalStackLayout>
 
     </VerticalStackLayout>
 </ContentPage>

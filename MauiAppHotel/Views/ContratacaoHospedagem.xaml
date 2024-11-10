@@ -8,25 +8,25 @@
              BackgroundImageSource="img_1.jpg">
     
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
-                         Padding="10">
+                         Padding="5" >
         
         <!-- Imagem no topo do layout-->
         <Image Source="hotel_img.png" WidthRequest="500" HeightRequest="100"/>
 
-        <Frame BackgroundColor="LightGray"
+        <Frame BackgroundColor="Navy"
                CornerRadius="20"
-               Padding="10"
-               Margin="10">
+               Padding="5"
+               Margin="5">
            <Label 
                 Text="Calculo da Diária"
                HorizontalOptions="Center"
                VerticalOptions="Center"
                 FontFamily="PlayfairDisplaySC-Regular"
-                FontSize="30"
-                TextColor="Navy"/>
+                FontSize="20"
+                TextColor="White"/>
         </Frame>
         
-        <Frame BackgroundColor="Transparent" BorderColor="Transparent" Margin="10">
+        <Frame BackgroundColor="Transparent" BorderColor="Black" Margin="5">
             <VerticalStackLayout>
                 <Grid RowDefinitions="Auto, Auto"
                       ColumnDefinitions="*, *, 2*">
@@ -67,23 +67,36 @@
                              Increment="1" />
                 </Grid>
 
-                <Label Text="Escolha sua Suíte" 
-                       TextColor="Black"/>
+                <Frame BackgroundColor="Transparent" BorderColor="Black" Padding="5" Margin="5">
+                    <VerticalStackLayout>
 
-                <Picker x:Name="pck_quarto"
-                        Title="Selecione sua Acomodação"
-                        TextColor="{StaticResource Black}"
-                        ItemDisplayBinding="{Binding Descricao}"/>
-                        
-
-
-                <Frame BackgroundColor="Transparent" BorderColor="Black" Margin="10" Padding="10">
-                     <VerticalStackLayout>
-                        <Label Text="Período da Estadia"
+                        <Label Text="Escolha sua Suíte" 
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"
                                TextColor="Navy"/>
-                        <HorizontalStackLayout>
+
+
+
+                        <Picker x:Name="pck_quarto"
+                                Title="Selecione sua Acomodação"
+                                TextColor="{StaticResource Black}"
+                                ItemDisplayBinding="{Binding Descricao}"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+
+
+                <Frame BackgroundColor="Transparent" BorderColor="Black" Margin="5" Padding="5">
+                     <VerticalStackLayout Spacing="10">
+                        <Label Text="Período da Estadia"
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"
+                               TextColor="Navy"/>
+                         
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-in:"
                                    TextColor="Black"/>
+                            
                             <DatePicker x:Name="dtpck_checkin"
                                         DateSelected="dtpck_checkin_DateSelected"
                                         TextColor="Black"
@@ -91,7 +104,7 @@
                                         />
                         </HorizontalStackLayout>
                         
-                        <HorizontalStackLayout>
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-out:"
                                    TextColor="Black"/>
                             <DatePicker x:Name="dtpck_checkout"
@@ -102,10 +115,13 @@
                 </Frame>
 
                 <Button Text="Avançar" 
-                        TextColor="Navy"
-                        Clicked="Button_Clicked"
-                        HorizontalOptions="Center"                        
-                        BackgroundColor="LightGray" />
+                        TextColor="White"
+                        Clicked="Button_Clicked"                              
+                        BackgroundColor="Navy" 
+                        HorizontalOptions="FillAndExpand"
+                         Padding="0"
+                        Margin="10"/>       
+                        
 
 
 

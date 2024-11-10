@@ -12,12 +12,12 @@ namespace MauiAppHotel
                 Descricao = "Suíte Super Luxo",
                 ValorDiariaAdulto = 110.0,
                 ValorDiariaCrianca = 55.0
-            },
+            }, 
             new Quarto()
             {
                 Descricao = "Suíte Super",
                 ValorDiariaAdulto = 80.0,
-                ValorDiariaCrianca =40.0
+                ValorDiariaCrianca = 40.0
             },
             new Quarto()
             {

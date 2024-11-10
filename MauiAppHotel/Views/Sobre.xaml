@@ -13,79 +13,94 @@
     <!-- Imagem no topo do layout-->
         <Image Source="hotel_img.png" WidthRequest="500" HeightRequest="100"/>
 
-        <Frame BackgroundColor="LightGray"
-       CornerRadius="20"
-       Padding="10"
-       Margin="10">
+        <Frame BackgroundColor="Navy"
+               CornerRadius="20"
+               Padding="10"
+               Margin="10">
             
-            <Label 
-        Text="Sobre o Aplicativo"
-       HorizontalOptions="Center"
-       VerticalOptions="Center"
-        FontFamily="PlayfairDisplaySC-Regular"
-        FontSize="25"
-        TextColor="Navy"/>
+            <Label Text="Sobre o Aplicativo"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontFamily="PlayfairDisplaySC-Regular"
+                   FontSize="25"
+                   TextColor="White"/>
         </Frame>
 
 
-        <Frame BackgroundColor="FloralWhite"  Margin="10" Padding="10">
-            <VerticalStackLayout >
-                <Grid RowDefinitions="Auto,Auto,Auto,Auto, Auto"                      
-                      ColumnDefinitions="* ">
+        <Frame  WidthRequest="200"
+                HeightRequest="150"
+                Margin="10"
+                Padding="10">
+            <Grid>
+                <Image Source="img_sobre.jpg" 
+                       Aspect="AspectFill"/>
+
+                <VerticalStackLayout >
+                    <Grid RowDefinitions="Auto,Auto,Auto,Auto, Auto"                      
+                          ColumnDefinitions="* ">
 
 
-                    <Label Grid.Row="0" Grid.Column="0"
-                           Text="Desenvolvedor:"
-                           TextColor="Navy"/>
+                        <Label Grid.Row="0" Grid.Column="0"
+                               Text="Desenvolvedor:"
+                               TextColor="Navy"/>
 
-                    <HorizontalStackLayout Grid.Row="1" Grid.Column="0">
-                        <Image Source="devee.png" WidthRequest="20" HeightRequest="20"/>
-                        <Label Text="Danielle Souto de Paiva"
-                              TextColor="Black"
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand"
+                                               Grid.Row="1" Grid.Column="0">
+                                        <Image Source="devee.png" WidthRequest="20" HeightRequest="20"/>
+                                        <Label Text="Danielle Souto de Paiva"
+                                               TextColor="Black"
+                                               FontSize="12"/>
+                        </HorizontalStackLayout>
+
+                        <Label Grid.Row="2" Grid.Column="0"
+                               Padding="0"/>
+
+
+                        <Label Grid.Row="3" Grid.Column="0"
+                               Text="Ano de Desenvolvimento:"
+                               TextColor="Navy"/>
+
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand"
+                                               Grid.Row="4" Grid.Column="0" >
+                                        <Image Source="calendario.png" WidthRequest="20" HeightRequest="20"/>
+                                        <Label Text="2024"
+                                               TextColor="Black"
+                                               FontSize="12"/>
+                        </HorizontalStackLayout>
+                    </Grid>
+
+                </VerticalStackLayout>
+            </Grid>
+        </Frame>
+
+        <Frame WidthRequest="200"
+                HeightRequest="150"
+                Margin="10"
+                Padding="10">
+            <Grid>
+                <Image Source="img_sobre.jpg" 
+                       Aspect="AspectFill"/>
+
+                <VerticalStackLayout >
+                    <Grid RowDefinitions="Auto">
+
+                        <Label Grid.Row="0"
+                               Text="Aplicativo desenvolvido  com uma interface amigável, funcionalidades robustas e um design intuitivo, ele facilita desde a descoberta até a reserva e o check-in no seu hotel. Garanta uma experiência de hospedagem personalizada e descomplicada, permitindo mais tempo para relaxar e explorar seu destino. Estamos empenhados em proporcionar o melhor em tecnologia e hospitalidade para que sua próxima estadia seja inesquecível."
+                               TextColor="Black"
                                FontSize="12"/>
-                    </HorizontalStackLayout>    
 
-                    <Label Grid.Row="2" Grid.Column="0"
-                           Padding="0"/>
-
-
-                    <Label Grid.Row="3" Grid.Column="0"
-                           Text="Ano de Desenvolvimento:"
-                           TextColor="Navy"/>
-                    <HorizontalStackLayout Grid.Row="4" Grid.Column="0">
-                        <Image Source="calendario.png" WidthRequest="20" HeightRequest="20"/>
-                          <Label Text="2024"
-                           TextColor="Black"
-                           FontSize="12"/>
-                    </HorizontalStackLayout>    
-
-
-
-                </Grid>
-                     
-                
-            </VerticalStackLayout>
-
-        </Frame>
-
-        <Frame BackgroundColor="FloralWhite" Margin="10">
-            <VerticalStackLayout>
-                <Grid RowDefinitions="Auto">
-
-                    <Label Grid.Row="0"
-                           Text="Aplicativo desenvolvido  com uma interface amigável, funcionalidades robustas e um design intuitivo, ele facilita desde a descoberta até a reserva e o check-in no seu hotel. Garanta uma experiência de hospedagem personalizada e descomplicada, permitindo mais tempo para relaxar e explorar seu destino. Estamos empenhados em proporcionar o melhor em tecnologia e hospitalidade para que sua próxima estadia seja inesquecível."
-                           TextColor="Gray"
-                           FontSize="12"/>
-
-                </Grid>
-            </VerticalStackLayout>
+                    </Grid>
+                </VerticalStackLayout>
+            </Grid>
         </Frame>
 
         <Button Text="Voltar"
-                TextColor="Navy"
+                TextColor="White"
                 Clicked="Button_Clicked"               
-                BackgroundColor="LightGray"
-                HorizontalOptions="Center" />
+                BackgroundColor="Navy"
+                HorizontalOptions="FillAndExpand"
+                Padding="10"
+                Margin="10"/>
 
     </VerticalStackLayout>
     
